@@ -55,3 +55,7 @@ Originally used by real users, later anonymized and refactored to simulate commo
 ## Languages
 
 Spanish (Native) · English (Professional) · German (C1)
+
+---
+
+This repository is also used as a discussion artifact when exploring short-term support or implementation consulting engagements.
