@@ -1,61 +1,76 @@
 # Yasser Gandhi Hernández Esquivel
-### Customer Success Engineer · Application Support · Software Implementation
 
-I work at the intersection of customers, product, and engineering, supporting successful SaaS implementations through technical onboarding, API integrations, and structured troubleshooting.
+**Technical Implementation & Integration Diagnostics**  
+SaaS Onboarding · API Troubleshooting · Customer Enablement  
 
-My focus is on reducing Time-to-Value by diagnosing integration issues early, validating request/response flows, and identifying root causes before escalation to engineering. I am comfortable reading code, inspecting network traffic, and debugging REST-based systems in production-like environments.
-
----
-
-## What I do
-
-- Technical onboarding and software implementation for SaaS products  
-- API integration debugging (REST, JSON, authentication, error handling)  
-- L1/L2 application support (401 / 403 / 404 / 500 errors, latency, retries)  
-- Frontend inspection and request flow analysis (React, TypeScript, browser DevTools)  
-- Cross-functional communication with non-technical stakeholders  
+📍 Mexico City · Remote  
+📫 yassergandhi.dev@gmail.com  
+🌐 yassergandhi.dev  
+🔗 linkedin.com/in/yassergandhi  
 
 ---
 
-## Featured project
+## 👋 What I Do
 
-### HuhuGerman — Application Support & CSE Demo
+I help SaaS teams **reduce integration friction and support tickets** by diagnosing where technical systems and user expectations misalign.
 
-A production-inspired demo designed to showcase real-world application support and customer success engineering workflows.
+I don't compete with full-time engineers. I collaborate with teams that need:
+- A structured eye on their onboarding and authentication flows
+- Clear documentation of **why** 4xx/5xx errors happen and how to communicate them
+- Root-cause analysis of recurring integration issues (webhooks, API keys, token expiration)
+- Translation between customer-reported symptoms and engineering-ready hypotheses
 
-Originally used by real users, later anonymized and refactored to simulate common SaaS integration issues such as authentication failures, API latency, and server-side errors.
-
-**Focus areas:**
-- Incident reproduction and troubleshooting workflows  
-- API request/response validation and payload inspection  
-- Operational diagnostics and request tracing  
-- Support-oriented documentation and customer enablement  
-- Demonstrating CSE and Implementation skills rather than feature development  
-
-🔗 Repository: https://github.com/yassergandhi/huhugerman
+**This is not an aspirational title. This is what I actually do — and have done — across 15 years of structured teaching and 3+ years of focused technical work.**
 
 ---
 
-## Technical stack
+## 🧠 How I Work
 
-- **APIs:** REST, JSON, HTTP, authentication flows  
-- **Tooling:** Postman, browser DevTools, HAR analysis  
-- **Frontend:** React, TypeScript  
-- **Practices:** Application troubleshooting, incident analysis, documentation  
-
----
-
-## Links
-
-- Portfolio: https://yassergandhi.dev  
-- LinkedIn: https://www.linkedin.com/in/yassergandhi/  
+| Mode | What It Means | Evidence |
+|------|---------------|----------|
+| **Diagnose** | 20-minute structured analysis of registration, auth, onboarding, or webhook flows. I look for where the system **increases uncertainty** instead of reducing it. | `Friction_Lab/` repository (private, examples available on request) |
+| **Document** | Translate technical errors (401/403/400/500) into human-readable, actionable messages. Formalize implicit knowledge into contracts. | HuhuGerman ADR (see below) |
+| **Enable** | Explain API behavior, rate limits, retry logic, and error recovery to non-technical stakeholders without humiliation. | 15 years of pedagogy; UAM enablement programs |
 
 ---
 
-## Languages
+## 🧪 Featured Project: HuhuGerman
 
-Spanish (Native) · English (Professional) · German (C1)
+**Not a "CSE Demo." Not a "Product."**  
+**A personal learning artifact — now archived — that demonstrates how I detect, diagnose, and document technical friction.**
+
+| Stage | What Happened | What It Demonstrates |
+|-------|--------------|----------------------|
+| **MVP** | Built a feedback tool for real German students (UAM). Worked, but IA overcorrected. | I can ship a functional system under real constraints. |
+| **Friction detected** | "The IA corrects things I haven't taught yet." | I can identify **cognitive gaps** between system behavior and user expectation. |
+| **ADR written** | Formalized domain schema (Zod), separated UI from pedagogy, documented limits. | I can translate implicit knowledge into **explicit contracts**. |
+| **Archived** | Project fulfilled its learning purpose. No longer active. | I can **close** without trauma — a documented decision, not abandonment. |
+
+🔗 [Repository: huhugerman](https://github.com/yassergandhi/huhugerman)  
+📄 [Architecture Decision Record (ADR) — core decisions](https://github.com/yassergandhi/huhugerman/blob/main/ADR.md)
 
 ---
 
-This repository is also used as a discussion artifact when exploring short-term support or implementation consulting engagements.
+## 🛠 Technical Competencies (Diagnosis-Level, Not Engineering-Level)
+
+| Area | Proficiency | How I Use It |
+|------|------------|--------------|
+| **REST APIs** | Diagnose | Inspect requests/responses, identify malformed payloads, missing headers, auth failures. |
+| **HTTP Status Codes** | Explain | Translate 401/403/400/500 into user-facing or team-facing root causes. |
+| **JWT / OAuth** | Understand | Detect expiration, scope issues, missing Bearer prefixes. |
+| **Webhooks** | Audit | Identify missing observability, unclear retry policies, opaque errors. |
+| **Browser DevTools / HAR** | Analyze | Trace failed requests, latency, client-side vs server-side failures. |
+| **Zod / TypeScript** | Read / minor write | Formalize simple contracts. Not a production engineer. |
+| **SQL** | Read | Verify existence of data, not optimization. |
+
+---
+
+## 📁 Structure I Use to Work
+
+```bash
+~/Friction_Lab/
+├── analysis/          # Technical, cognitive, operational, integration gaps
+├── history/           # Outreach, conversations, closed deals (when they happen)
+├── templates/         # Audit checklists, communication, postmortems
+├── outputs/           # Reports delivered to potential clients
+└── personal/          # Limits, reflections, biathlon training
