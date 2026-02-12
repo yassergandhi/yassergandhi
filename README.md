@@ -11,67 +11,96 @@ SaaS Onboarding · API Troubleshooting · Customer Enablement
 # 👋 Yasser Gandhi Hernández Esquivel
 
 
-I work at the intersection of **technical systems and human experience**. My background combines:
+I bridge the gap between **what a system delivers** and **what a user understands**. 
+I don't just debug code; I diagnose why the user got confused in the first place.
 
-- **Systems Web** — Universidad de Guadalajara
-- **Pedagogy** — UNAM Master's degree
-- **German Literature** — UNAM Bachelor's
-- **15 years** teaching and translating complex rules into clear, executable steps
+I'm currently seeking a role in **Application Support, Implementation Engineering, or Technical Enablement** where I can use my hybrid background (Linguistics + Pedagogy + Systems) to reduce onboarding friction and prevent recurring production issues.
 
 ---
 
-## 🔍 What I do
+## 🧠 What I Actually Do
 
-I help SaaS teams **diagnose friction** in their products before it becomes tickets or churn.
-
-- **Integration troubleshooting** — REST APIs, 401/403/404/500 errors, payload validation, authentication flows
-- **Technical onboarding** — reduce time-to-value by identifying cognitive and technical gaps
-- **Request/response analysis** — browser DevTools, HAR inspection, end-to-end flow tracing
-- **Cross-functional communication** — translate between engineering, product, and customers
-- **Documentation & enablement** — turn ambiguous errors into actionable guidance
-
-I don't claim titles I haven't earned.  
-I offer **diagnosis, observation, and structured problem definition** — skills validated by 15 years of detecting *false understanding* in complex systems.
+- **Formalize tacit knowledge** – Convert undocumented "rules" (pedagogy, business logic) into **executable contracts** (Zod, TypeScript).
+- **Design for operational reality** – I build identity resolution systems that work on mobile phones without forcing users to log in.
+- **Instrument for support** – I expose `Trace IDs`, `Latency`, and `Status Codes` in the UI so Support Engineers don't need to dig through logs.
+- **Reduce Implementation Gaps** – I analyze where the system's *model* doesn't match the user's *mental model*, and fix the contract.
 
 ---
 
-## 🧠 Featured Project
+## 🔧 Technical Stack
 
-### [huhuGERMAN](https://github.com/yassergandhi/huhugerman) — Implementation & Support Demo
+**API & Integration:**  
+`REST` · `JSON` · `HTTP` · `Authentication (JWT/OAuth)` · `Webhook Debugging` · `Postman` · `HAR Analysis`
 
-**Status:** 📦 Archived Learning Artifact (no active users, no revenue)
+**Languages & Frameworks:**  
+`TypeScript` · `React` · `Astro` · `Node.js` · `Zod` · `Tailwind`
 
-Originally built for real university students (UAM-Azcapotzalco), later refactored to simulate **production support workflows**. This project demonstrates:
+**Databases & Backend:**  
+`Supabase` · `PostgreSQL` · `Google Apps Script`
 
-- **Incident reproduction** — controlled injection of 401/404/500 errors to practice diagnosis
-- **API validation** — request/response inspection, payload verification
-- **Observability** — trace IDs, latency metrics exposed for troubleshooting
-- **Support-oriented documentation** — runbooks, ADRs, post-mortem templates
+**Practices:**  
+`Domain-Driven Design (DDD)` · `Contract Testing` · `Root Cause Analysis` · `Incident Reproduction` · `Runbook Creation`
 
-**🔗 [Live Demo](https://huhugerman-demo-cse.netlify.app/) · [Source Code](https://github.com/yassergandhi/huhugerman-portal)**
-
-> *"This is not a product. It is evidence of how I think."*
+**Languages:**  
+Spanish (Native) · English (Professional) · German (C1)
 
 ---
 
-## 🛠️ Technical Toolkit
+## 📌 Featured Projects
 
-| Area | Tools & Concepts |
-|------|------------------|
-| **APIs** | REST, JSON, HTTP methods, OAuth, JWT, webhook inspection |
-| **Debugging** | Chrome DevTools, HAR analysis, Postman, network throttling |
-| **Frontend** | React, TypeScript, Astro (reading, not heavy development) |
-| **Practices** | Root cause analysis, incident documentation, runbook creation |
-| **Languages** | Spanish (native), English (professional), German (C1) |
+These are not tutorials. They are production-inspired systems built to solve real user friction.
+
+### 🎓 **huhuGERMAN – Domain-Driven Pedagogy & Identity Resolution**
+*[Archived · Post-Mortem · Learning Artifact]*
+
+**Context:**  
+University students (UAM) needed asynchronous writing feedback. They submitted via Google Forms on mobile. Google’s authentication was unreliable. Emails were misspelled. The system had to be **tolerant, not brittle**.
+
+**What I built:**
+- **Domain Model:** Formalized 10 weeks of A1/A2 curriculum into `Zod` schemas (200+ lines of constraints). The schema explicitly defines *what was taught* and *what the AI is forbidden to correct*.
+- **Identity Resolution (Zero Auth):** SHA-256 fingerprinting using email, name, and student ID. UUID generation server-side. No user lockouts. No support tickets for "I can't log in."
+- **Observability:** Pedagogical context is snapshotted in JSONB with every submission, enabling full auditability.
+
+**Stack:** `Astro` · `Supabase` · `Zod` · `PostgreSQL` · `Google Apps Script`  
+**Repositories:**
+- [`huhugerman-portal`](https://github.com/yassergandhi/huhugerman-portal) – Student-facing UI, mobile-first.
+- [`huhugerman-cse`](https://github.com/yassergandhi/huhugerman-cse) – Identity engine, ADR, sanitization logic.
+
+---
+
+### ⚙️ **Resilient API Integration Demo (Fault Injection)**
+*[Active Demo]*
+
+**Context:**  
+I needed to practice diagnosing production issues (401s, 500s, latency) without crashing a real system. I built an SDK that intentionally breaks.
+
+**What I built:**
+- **Chaos Engineering SDK:** `lessonApi.ts` injects 20% failure rates (401/500) and 300-1500ms latency jitter.
+- **Support Tooling:** A Debug Panel embedded in the UI displays `Trace ID`, `Latency`, and `Status Code` in real-time. This allows a support engineer to diagnose a customer issue without access to backend logs.
+- **Error Boundaries:** Graceful degradation with "Retry" logic.
+
+**Stack:** `React` · `TypeScript` · `Tailwind`  
+**Live Demo:** [huhugerman-demo-cse.netlify.app](https://huhugerman-demo-cse.netlify.app/)  
+**Repo:** [`huhugerman`](https://github.com/yassergandhi/huhugerman)
+
+---
+
+## 📈 Recent Activity
+
+<!-- GITHUB ACTIVITY: This section is manually updated to show consistent work -->
+- **[2026-02]** Refactored `week-context.schema.ts` to separate `gelernt` (learned) vs `nicht_gelernt` (not yet learned) – prevents AI over-correction.
+- **[2026-01]** Published ADR: "Why we chose identity resolution over authentication."
+- **[2026-01]** Built `identity-normalization.gs` – Google Apps Script to sanitize 500+ student records without manual intervention.
 
 ---
 
 ## 📫 Contact
 
-- **Portfolio:** [yassergandhi.dev](https://yassergandhi.dev)
+- **Email:** yassergandhi.dev@gmail.com  
+- **Portfolio:** [yassergandhi.dev](https://yassergandhi.dev)  
 - **LinkedIn:** [linkedin.com/in/yassergandhi](https://linkedin.com/in/yassergandhi)
-- **Email:** yassergandhi.dev@gmail.com
 
 ---
 
-*This profile is a living document. I am actively seeking opportunities in **technical onboarding, implementation support, and integration diagnostics** — preferably remote, with DACH or Latin American teams.*
+*"Sistema roto ≠ Persona defectuosa."*  
+*I help teams understand why their system is breaking user trust.*
