@@ -3,74 +3,75 @@
 **Technical Implementation & Integration Diagnostics**  
 SaaS Onboarding · API Troubleshooting · Customer Enablement  
 
-📍 Mexico City · Remote  
+📍 Mexico City · Remote · German C1 · English Professional**
 📫 yassergandhi.dev@gmail.com  
 🌐 yassergandhi.dev  
 🔗 linkedin.com/in/yassergandhi  
 
----
+# 👋 Yasser Gandhi Hernández Esquivel
 
-## 👋 What I Do
 
-I help SaaS teams **reduce integration friction and support tickets** by diagnosing where technical systems and user expectations misalign.
+I work at the intersection of **technical systems and human experience**. My background combines:
 
-I don't compete with full-time engineers. I collaborate with teams that need:
-- A structured eye on their onboarding and authentication flows
-- Clear documentation of **why** 4xx/5xx errors happen and how to communicate them
-- Root-cause analysis of recurring integration issues (webhooks, API keys, token expiration)
-- Translation between customer-reported symptoms and engineering-ready hypotheses
-
-**This is not an aspirational title. This is what I actually do — and have done — across 15 years of structured teaching and 3+ years of focused technical work.**
+- **Systems Web** — Universidad de Guadalajara
+- **Pedagogy** — UNAM Master's degree
+- **German Literature** — UNAM Bachelor's
+- **15 years** teaching and translating complex rules into clear, executable steps
 
 ---
 
-## 🧠 How I Work
+## 🔍 What I do
 
-| Mode | What It Means | Evidence |
-|------|---------------|----------|
-| **Diagnose** | 20-minute structured analysis of registration, auth, onboarding, or webhook flows. I look for where the system **increases uncertainty** instead of reducing it. | `Friction_Lab/` repository (private, examples available on request) |
-| **Document** | Translate technical errors (401/403/400/500) into human-readable, actionable messages. Formalize implicit knowledge into contracts. | HuhuGerman ADR (see below) |
-| **Enable** | Explain API behavior, rate limits, retry logic, and error recovery to non-technical stakeholders without humiliation. | 15 years of pedagogy; UAM enablement programs |
+I help SaaS teams **diagnose friction** in their products before it becomes tickets or churn.
 
----
+- **Integration troubleshooting** — REST APIs, 401/403/404/500 errors, payload validation, authentication flows
+- **Technical onboarding** — reduce time-to-value by identifying cognitive and technical gaps
+- **Request/response analysis** — browser DevTools, HAR inspection, end-to-end flow tracing
+- **Cross-functional communication** — translate between engineering, product, and customers
+- **Documentation & enablement** — turn ambiguous errors into actionable guidance
 
-## 🧪 Featured Project: HuhuGerman
-
-**Not a "CSE Demo." Not a "Product."**  
-**A personal learning artifact — now archived — that demonstrates how I detect, diagnose, and document technical friction.**
-
-| Stage | What Happened | What It Demonstrates |
-|-------|--------------|----------------------|
-| **MVP** | Built a feedback tool for real German students (UAM). Worked, but IA overcorrected. | I can ship a functional system under real constraints. |
-| **Friction detected** | "The IA corrects things I haven't taught yet." | I can identify **cognitive gaps** between system behavior and user expectation. |
-| **ADR written** | Formalized domain schema (Zod), separated UI from pedagogy, documented limits. | I can translate implicit knowledge into **explicit contracts**. |
-| **Archived** | Project fulfilled its learning purpose. No longer active. | I can **close** without trauma — a documented decision, not abandonment. |
-
-🔗 [Repository: huhugerman](https://github.com/yassergandhi/huhugerman)  
-📄 [Architecture Decision Record (ADR) — core decisions](https://github.com/yassergandhi/huhugerman/blob/main/ADR.md)
+I don't claim titles I haven't earned.  
+I offer **diagnosis, observation, and structured problem definition** — skills validated by 15 years of detecting *false understanding* in complex systems.
 
 ---
 
-## 🛠 Technical Competencies (Diagnosis-Level, Not Engineering-Level)
+## 🧠 Featured Project
 
-| Area | Proficiency | How I Use It |
-|------|------------|--------------|
-| **REST APIs** | Diagnose | Inspect requests/responses, identify malformed payloads, missing headers, auth failures. |
-| **HTTP Status Codes** | Explain | Translate 401/403/400/500 into user-facing or team-facing root causes. |
-| **JWT / OAuth** | Understand | Detect expiration, scope issues, missing Bearer prefixes. |
-| **Webhooks** | Audit | Identify missing observability, unclear retry policies, opaque errors. |
-| **Browser DevTools / HAR** | Analyze | Trace failed requests, latency, client-side vs server-side failures. |
-| **Zod / TypeScript** | Read / minor write | Formalize simple contracts. Not a production engineer. |
-| **SQL** | Read | Verify existence of data, not optimization. |
+### [huhuGERMAN](https://github.com/yassergandhi/huhugerman) — Implementation & Support Demo
+
+**Status:** 📦 Archived Learning Artifact (no active users, no revenue)
+
+Originally built for real university students (UAM-Azcapotzalco), later refactored to simulate **production support workflows**. This project demonstrates:
+
+- **Incident reproduction** — controlled injection of 401/404/500 errors to practice diagnosis
+- **API validation** — request/response inspection, payload verification
+- **Observability** — trace IDs, latency metrics exposed for troubleshooting
+- **Support-oriented documentation** — runbooks, ADRs, post-mortem templates
+
+**🔗 [Live Demo](https://huhugerman-demo-cse.netlify.app/) · [Source Code](https://github.com/yassergandhi/huhugerman-portal)**
+
+> *"This is not a product. It is evidence of how I think."*
 
 ---
 
-## 📁 Structure I Use to Work
+## 🛠️ Technical Toolkit
 
-```bash
-~/Friction_Lab/
-├── analysis/          # Technical, cognitive, operational, integration gaps
-├── history/           # Outreach, conversations, closed deals (when they happen)
-├── templates/         # Audit checklists, communication, postmortems
-├── outputs/           # Reports delivered to potential clients
-└── personal/          # Limits, reflections, biathlon training
+| Area | Tools & Concepts |
+|------|------------------|
+| **APIs** | REST, JSON, HTTP methods, OAuth, JWT, webhook inspection |
+| **Debugging** | Chrome DevTools, HAR analysis, Postman, network throttling |
+| **Frontend** | React, TypeScript, Astro (reading, not heavy development) |
+| **Practices** | Root cause analysis, incident documentation, runbook creation |
+| **Languages** | Spanish (native), English (professional), German (C1) |
+
+---
+
+## 📫 Contact
+
+- **Portfolio:** [yassergandhi.dev](https://yassergandhi.dev)
+- **LinkedIn:** [linkedin.com/in/yassergandhi](https://linkedin.com/in/yassergandhi)
+- **Email:** yassergandhi.dev@gmail.com
+
+---
+
+*This profile is a living document. I am actively seeking opportunities in **technical onboarding, implementation support, and integration diagnostics** — preferably remote, with DACH or Latin American teams.*
