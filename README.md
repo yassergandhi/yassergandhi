@@ -18,9 +18,9 @@ También desarrollo los sistemas que utilizo en estos proyectos.
 
 ## Proyectos
 
-### huhuGERMAN-stack
+### huhugerman-instrument
 
-Sistema propio para procesar entregas de estudiantes y organizar el trabajo trimestre a trimestre.
+Sistema en producción activa que procesa entregas de estudiantes de huhuGERMAN y organiza el trabajo trimestre a trimestre.
 
 ```text
 Google Forms
@@ -32,9 +32,9 @@ Google Sheets
 Análisis y procesamiento
 ```
 
-**Stack:** TypeScript · Google Apps Script · Zod
+**Stack:** Google Apps Script · Google Forms · Google Sheets
 
-El sistema incluye procesamiento tipado, ramificación por nivel y anonimización de identificadores antes del procesamiento.
+Clasifica estudiantes por dominio de correo, anonimiza identificadores con hash SHA-256 y genera automáticamente los Forms que los estudiantes llenan en cada actividad.
 
 ### huhugerman.com
 
