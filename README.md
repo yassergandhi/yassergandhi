@@ -1,92 +1,95 @@
 # Yasser Gandhi Hernández Esquivel
-**Learning Systems Architect · Germanista C1 · Senior Developer**  
-📍 Mexico City · Remote  
-🌐 [yassergandhi.dev](https://yassergandhi.dev) · [huhugerman.com](https://huhugerman.com)  
-💼 [linkedin.com/in/yassergandhi](https://linkedin.com/in/yassergandhi)
 
----
+**Profesor-investigador de alemán · Desarrollador web · Fundador de huhuGERMAN**
 
-## The problem this profile exists to solve
+Ciudad de México · Remoto
 
-41% of international students in Germany drop out before graduating (DAAD, Reucher 2019).  
-The dominant cause: the gap between *Hochdeutsch* taught in classrooms and  
-*Umgangssprache* encountered on Day 1 in Hamburg, Berlin, or Munich.
+[yassergandhi.dev](https://yassergandhi.dev) · [huhugerman.com](https://huhugerman.com) · [LinkedIn](https://linkedin.com/in/yassergandhi)
 
-I built the technical infrastructure for an instructional system designed  
-specifically for this gap: **huhuGERMAN** — operational since 2011, first documented case 2022.
+## Qué hago
 
----
+Trabajo en dos tipos de problemas que aparecen cuando una persona necesita pasar del conocimiento a la acción.
 
-## What I actually do
+En **huhuGERMAN**, estudio y diseño experiencias para que estudiantes de alemán puedan desenvolverse en situaciones reales, especialmente cuando aparecen velocidad, ruido, varias voces o respuestas inesperadas.
 
-Three competencies that rarely coexist in a single profile:
+En **yassergandhi.dev**, estudio problemas en los primeros contactos de productos digitales: formularios, onboarding, soporte y handoffs que dejan al equipo sin suficiente contexto para decidir qué hacer después.
 
-| Competency | What it means in practice | Verifiable evidence |
-|---|---|---|
-| **DaF Researcher-Practitioner** | 15 years A1–C1 instruction, CELEX-UAM Azcapotzalco. Two UNAM theses. 11 Scopus peer-review contributions. Active sinodal. | SEP credentials, RIEM, RDU UNAM Vol.18(5) |
-| **C1 Germanist** | B.A. German Literature, UNAM. C1 certified Offenburg 2019. Hamburg fieldwork 2019. Documented acquisition episodes. | Offenburg certificate, lic. thesis 2015 |
-| **Learning Systems Architect** | B.Sc. Web Development, UdeG — GPA 98.5. TypeScript, Zod, Astro, Google Apps Script. huhuGERMAN v10 in production. | SEP cédula 15344700, GitHub repositories |
+También desarrollo los sistemas que utilizo en estos proyectos.
 
-The concrete intersection: someone who writes Zod schemas for pedagogical domains and publishes in Scopus-indexed journals.
+## Proyectos
 
----
+### huhuGERMAN-stack
 
-## huhuGERMAN — technical overview
+Sistema propio para procesar entregas de estudiantes y organizar el trabajo trimestre a trimestre.
 
-A data pipeline that turns classroom pedagogy into structured, analyzable evidence.
-```
-Google Form (async student input)
-    → GAS v10 trigger (onFormSubmit)
-    → ENTREGAS sheet (25-column typed schema)
-    → Weekly analysis layer
+```text
+Google Forms
+    ↓
+Google Apps Script
+    ↓
+Google Sheets
+    ↓
+Análisis y procesamiento
 ```
 
-**Key architectural decisions:**
-- Domain-driven: pedagogical logic is the source of truth, not the backend
-- `e.values[]` mapping over sheet reads — atomic, trigger-safe
-- SHA-256 student ID hashing — privacy by design
-- Branching by level (A1 / A2) within a single trigger function
-- No external dependencies in the core pipeline (Notion and Supabase deliberately removed from v10)
+**Stack:** TypeScript · Google Apps Script · Zod
 
-**Stack:** Google Apps Script · TypeScript · Zod · Astro · Google Sheets API
+El sistema incluye procesamiento tipado, ramificación por nivel y anonimización de identificadores antes del procesamiento.
 
----
+### huhugerman.com
 
-## Research & academic record
+Sitio y laboratorio del proyecto huhuGERMAN.
 
-**Current project:** *huhuGERMAN: authentic input with metacognitive scaffolding in A1 German for Mexican university students* — target journal: *Die Unterrichtspraxis* (AATG), submission May 2026.
+**Stack:** Astro · TypeScript · Vercel
 
-**Central claim:** Authentic German input is processable from A1 *if and only if* four conditions are met: explicit metacognitive framing, operational distinction between global and selective comprehension, normalized repeated listening, and calibrated Umgangssprache exposure from initial stages.
+[Ver sitio](https://huhugerman.com)
 
-**Theoretical framework:** Krashen · Long · Vygotsky · MacIntyre et al. 1998 (WTC) · Vandergrift · Byram 1997 · Norton/Block · Gadamer (Bildung) · Borg (practitioner-researcher) · Phillipson 1992 · Medgyes 1994
+### yassergandhi.dev
 
-**Publication record:**
-- 11 Scopus peer-review contributions (active reviewer, RIEM — UNAM Faculty of Medicine)
-- "El viaje de Emilio" — RDU UNAM Vol. 18(5), 2017 (Case 01, documented)
-- MEd thesis, UNAM Pedagogy, 2020 — diagnoses 41% dropout correlation with Hochdeutsch/Umgangssprache gap
-- BA thesis, UNAM German Literature, 2015 — *Keine Panik*: first Vandergrift application at A1
+Sitio profesional para investigación y diagnóstico de problemas en productos digitales.
 
----
+**Stack:** React · TypeScript · Tailwind
 
-## Current repositories
+[Ver sitio](https://yassergandhi.dev)
 
-Work in this account documents real instructional systems, not tutorial projects.
+## Formación
 
-- `huhuGERMAN-stack` — Google Apps Script pipeline, v10. Typed submission processing for A1/A2 cohorts.
-- `huhugerman.com` — Astro-based academic site
-- `yassergandhi.dev` — professional/portfolio site
+| Título | Institución | Año |
+|---|---|---:|
+| Lic. en Lengua y Literaturas Modernas, Letras Alemanas | UNAM | 2012 |
+| Maestría en Pedagogía | UNAM | 2020 |
+| Lic. en Desarrollo de Sistemas Web | Universidad de Guadalajara | 2025 |
 
----
+Mis títulos y cédulas profesionales son verificables.
 
-## Languages
+## Docencia e investigación
 
-🇩🇪 German — C1 (Offenburg, 2019)  
-🇲🇽 Spanish — native  
-🇺🇸 English — professional working proficiency
+Llevo **15 años enseñando alemán**, desde 2011. Actualmente trabajo en CELEX-UAM Azcapotzalco.
 
----
+También fui profesor y coordinador del Colegio de Alemán de la ENP-UNAM y profesor de Didáctica del Alemán como Lengua Extranjera.
 
-## Contact
+Mi trabajo académico incluye investigación sobre enseñanza del alemán, trabajo de campo en Hamburgo y revisión por pares de investigación educativa y médica.
 
-`yghe@azc.uam.mx` · UAM Azcapotzalco, CELEX  
-Available for: AI annotation (linguistic + code quality, German/Spanish/English) · EdTech consulting · DaF curriculum development · TypeScript freelance (DACH market)
+**Publicación propia**
+
+[El viaje de Emilio a Alemania — RDU UNAM, 2017](https://revista.unam.mx/ojs/index.php/rdu/article/view/1053)
+
+**Tesis de Maestría**
+
+[La formación docente del profesor de alemán: estudio comparativo México-Alemania](https://tesiunamdocumentos.dgb.unam.mx/ptd2020/octubre/0804677/Index.html)
+
+**Tesis de Licenciatura**
+
+[Desarrollo de estrategias metacognitivas en la comprensión auditiva](https://tesiunamdocumentos.dgb.unam.mx/ptd2015/enero/0724158/Index.html)
+
+## Idiomas
+
+- Alemán — C1
+- Español — nativo
+- Inglés — profesional
+
+## Contacto
+
+[yassergandhi.dev](https://yassergandhi.dev)
+
+[LinkedIn](https://linkedin.com/in/yassergandhi)
