@@ -1,95 +1,77 @@
 # Yasser Gandhi Hernández Esquivel
 
-**Profesor-investigador de alemán · Desarrollador web · Fundador de huhuGERMAN**
+**Software Developer · React + TypeScript · REST APIs · Web Applications**
 
-Ciudad de México · Remoto
+Mexico City · Remote
 
-[yassergandhi.dev](https://yassergandhi.dev) · [huhugerman.com](https://huhugerman.com) · [LinkedIn](https://linkedin.com/in/yassergandhi)
+[LinkedIn](https://linkedin.com/in/yassergandhi) · [yassergandhi.dev](https://yassergandhi.dev) · [huhugerman.com](https://huhugerman.com)
 
-## Qué hago
+## About
 
-Trabajo en dos tipos de problemas que aparecen cuando una persona necesita pasar del conocimiento a la acción.
+My software engineering track is recent; my professional track is not.
 
-En **huhuGERMAN**, estudio y diseño experiencias para que estudiantes de alemán puedan desenvolverse en situaciones reales, especialmente cuando aparecen velocidad, ruido, varias voces o respuestas inesperadas.
+I graduated in Web Systems Development in 2025 after a longer career in university teaching and research. My current technical work focuses on web applications, API integration, failure handling, automation, and software that makes its assumptions and error states visible.
 
-En **yassergandhi.dev**, estudio problemas en los primeros contactos de productos digitales: formularios, onboarding, soporte y handoffs que dejan al equipo sin suficiente contexto para decidir qué hacer después.
+I do not present my academic career as software-engineering tenure. The two trajectories are separate: the earlier one contributes professional maturity, research practice, documentation, and experience working with ambiguous problems; the technical one must be demonstrated through code, deployed workflows, APIs, tests, architecture decisions, and reproducible behavior.
 
-También desarrollo los sistemas que utilizo en estos proyectos.
+## Technical evidence
 
-## Proyectos
+### resilient-api-integration-demo
 
-### huhugerman-instrument
+Public React + TypeScript demo for controlled API-failure handling.
 
-Sistema en producción activa que procesa entregas de estudiantes de huhuGERMAN y organiza el trabajo trimestre a trimestre.
+It exposes synthetic 401, 404, and 500 scenarios, request IDs, latency, structured error states, and recovery guidance. The scenarios are intentionally simulated so the failure paths remain reproducible and inspectable.
 
-```text
-Google Forms
-    ↓
-Google Apps Script
-    ↓
-Google Sheets
-    ↓
-Análisis y procesamiento
-```
+[Repository](https://github.com/yassergandhi/resilient-api-integration-demo)
 
-**Stack:** Google Apps Script · Google Forms · Google Sheets
+### huhugerman-frontend
 
-Clasifica estudiantes por dominio de correo, anonimiza identificadores con hash SHA-256 y genera automáticamente los Forms que los estudiantes llenan en cada actividad.
+Astro application integrating a language-model API with student submissions.
 
-### huhugerman.com
+`main` contains the working experimental portal. The separate `feature/dynamic-lessons` branch explores a stronger domain model in TypeScript + Zod so pedagogical rules constrain what the AI may correct.
 
-Sitio y laboratorio del proyecto huhuGERMAN.
+[Repository](https://github.com/yassergandhi/huhugerman-frontend)
 
-**Stack:** Astro · TypeScript · Vercel
+### huhugerman-backend
 
-[Ver sitio](https://huhugerman.com)
+Google Apps Script identity-normalization prototype with UUID generation, SHA-256 correlation, input normalization, and explicit review flags for ambiguous records.
 
-### yassergandhi.dev
+[Repository](https://github.com/yassergandhi/huhugerman-backend)
 
-Sitio profesional para investigación y diagnóstico de problemas en productos digitales.
+### huhugerman-instrument — private production repository
 
-**Stack:** React · TypeScript · Tailwind
+I maintain a private Google Apps Script production workflow that generates Google Forms from structured activity data, configures submission triggers, and processes student responses into Google Sheets.
 
-[Ver sitio](https://yassergandhi.dev)
+The repository is intentionally private because it contains the operational implementation of the h.u.h.u. method, including form-generation rules, internal field mappings, research data structures, and the workflow used to collect information across the method's T1–T7 sequence. The deployed v11 response table explicitly stores student-response stages T2–T6; other stages belong to the wider instructional and feedback workflow.
 
-## Formación
+Public repositories above expose related engineering patterns without publishing the protected implementation.
 
-| Título | Institución | Año |
+## Current stack
+
+`TypeScript` · `JavaScript` · `React` · `Astro` · `REST APIs` · `Google Apps Script` · `Git/GitHub`
+
+Academic coursework also includes backend programming, SQL/database design, NoSQL, cloud services, interoperability, mobile applications, and cybersecurity. Coursework is not presented here as production experience.
+
+## Education
+
+| Degree | Institution | Year |
 |---|---|---:|
-| Lic. en Lengua y Literaturas Modernas, Letras Alemanas | UNAM | 2012 |
-| Maestría en Pedagogía | UNAM | 2020 |
-| Lic. en Desarrollo de Sistemas Web | Universidad de Guadalajara | 2025 |
+| B.S. Web Systems Development | Universidad de Guadalajara | 2025 |
+| M.Ed. Pedagogy | UNAM | 2020 |
+| B.A. German Studies / Modern Languages and Literatures | UNAM | 2012 |
 
-Mis títulos y cédulas profesionales son verificables.
+## Previous professional background
 
-## Docencia e investigación
+Before moving deeper into software, I worked in university teaching, academic coordination, curriculum design, research, and peer review.
 
-Llevo **15 años enseñando alemán**, desde 2011. Actualmente trabajo en CELEX-UAM Azcapotzalco.
+That background is relevant to how I work, but it does not replace technical evidence.
 
-También fui profesor y coordinador del Colegio de Alemán de la ENP-UNAM y profesor de Didáctica del Alemán como Lengua Extranjera.
+## Languages
 
-Mi trabajo académico incluye investigación sobre enseñanza del alemán, trabajo de campo en Hamburgo y revisión por pares de investigación educativa y médica.
+- Spanish — native
+- German — C1 / full professional
+- English — professional working proficiency
 
-**Publicación propia**
-
-[El viaje de Emilio a Alemania — RDU UNAM, 2017](https://revista.unam.mx/ojs/index.php/rdu/article/view/1053)
-
-**Tesis de Maestría**
-
-[La formación docente del profesor de alemán: estudio comparativo México-Alemania](https://tesiunamdocumentos.dgb.unam.mx/ptd2020/octubre/0804677/Index.html)
-
-**Tesis de Licenciatura**
-
-[Desarrollo de estrategias metacognitivas en la comprensión auditiva](https://tesiunamdocumentos.dgb.unam.mx/ptd2015/enero/0724158/Index.html)
-
-## Idiomas
-
-- Alemán — C1
-- Español — nativo
-- Inglés — profesional
-
-## Contacto
-
-[yassergandhi.dev](https://yassergandhi.dev)
+## Contact
 
 [LinkedIn](https://linkedin.com/in/yassergandhi)
